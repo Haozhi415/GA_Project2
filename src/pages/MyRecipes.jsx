@@ -21,12 +21,11 @@ function MyRecipes() {
     };
 
 
-    // Lifting state.
     const [userRecipes, setUserRecipes] = useState([]);
 
-
     const handleSaveRecipe = (newRecipe) => {
-        // MyRecipes.jsx receives the values of "newRecipe" from MyRecipeForm.jsx
+        // handleSaveRecipe here is triggered with the newRecipe data from MyRecipeForm.
+        // setUserRecipes is used to update the state, adding the new recipe to the existing list.
         setUserRecipes((prevRecipes) => [...prevRecipes, newRecipe]);
     };
 
@@ -37,8 +36,8 @@ function MyRecipes() {
             {/* callback function passed as prop to MyRecipeForm */}
             <MyRecipeForm handleSaveRecipe={handleSaveRecipe} style={myRecipeFormStyle} />
 
-            {/* userRecipes passed as prop to MyRecipesList */}
-            <MyRecipesList userRecipes={userRecipes} />
+            {/* userRecipes and setUserRecipes passed as props to MyRecipesList */}
+            <MyRecipesList userRecipes={userRecipes} setUserRecipes={setUserRecipes} />
         </div>
     );
 }

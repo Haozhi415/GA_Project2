@@ -39,9 +39,11 @@ function MyRecipeForm({ handleSaveRecipe, style }) {
             });
 
             if (response.ok) {
+
+                // If the API request is successful, the new recipe data is obtained and set as newRecipe.
                 const newRecipe = await response.json();
 
-                // Pass "newRecipe" back to MyRecipe.jsx
+                // "handleSaveRecipe(newRecipe); is called with the new recipe data." 
                 handleSaveRecipe(newRecipe);
 
                 setFormData({
