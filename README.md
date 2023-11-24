@@ -7,8 +7,9 @@ A simple recipe app built with React.
 ## Screenshot(s)
 
 
-![Landing Page](/path/to/landing-page-screenshot.png)
-<!-- Add more screenshots if needed -->
+![](https://github.com/Haozhi415/GA_Project2/blob/master/1.png?raw=true)
+![](https://github.com/Haozhi415/GA_Project2/blob/master/2.png?raw=true)
+![](https://github.com/Haozhi415/GA_Project2/blob/master/3.png?raw=true)
 
 ## Technologies Used
 - React
