@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import RecipeHeader from './RecipeHeader';
 import RecipeDetails from './RecipeDetails';
 import RecipeInstructions from './RecipeInstructions';
+import RecipeIngredients from "./RecipeIngredients";
 
 
 function Recipe() {
@@ -40,6 +41,7 @@ function Recipe() {
         <div>
             <RecipeHeader title={details.title} image={details.image} />
             <RecipeDetails recipeId={details.id} />
+            <RecipeIngredients extendedIngredients={details.extendedIngredients} />
             <RecipeInstructions instructions={details.instructions} />
         </div>
 
