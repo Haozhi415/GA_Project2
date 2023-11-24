@@ -5,9 +5,13 @@ function RecipeIngredients({ extendedIngredients }) {
         <div>
             <h3>Ingredients</h3>
             <ul>
-                {extendedIngredients.map((ingredient) => (
-                    <li key={ingredient.id}>{ingredient.name}</li>
-                ))}
+                {extendedIngredients && extendedIngredients.length > 0 ? (
+                    extendedIngredients.map((ingredient) => (
+                        <li key={ingredient.id}>{ingredient.name}</li>
+                    ))
+                ) : (
+                    <p>No ingredients available.</p>
+                )}
             </ul>
         </div>
     );
