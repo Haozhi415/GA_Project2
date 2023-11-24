@@ -43,7 +43,7 @@ function MyRecipeForm({ handleSaveRecipe, style }) {
                 // If the API request is successful, the new recipe data is obtained and set as newRecipe.
                 const newRecipe = await response.json();
 
-                // "handleSaveRecipe(newRecipe); is called with the new recipe data." 
+                // "handleSaveRecipe(newRecipe) is called with the new recipe data." 
                 handleSaveRecipe(newRecipe);
 
                 setFormData({
