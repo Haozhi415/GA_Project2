@@ -4,7 +4,7 @@
 
 A simple recipe app built with React.
 
-## Screenshot(s)
+## Screenshots
 
 
 ![](https://github.com/Haozhi415/GA_Project2/blob/master/1.png?raw=true)
