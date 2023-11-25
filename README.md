@@ -1,4 +1,4 @@
-# React Recipe App
+# GA Project 2
 
 ## Description
 
