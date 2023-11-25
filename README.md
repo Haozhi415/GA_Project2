@@ -21,6 +21,9 @@ A simple recipe app built with React.
 1. Visit the deployed app: [https://ga-project2-blush.vercel.app/]
 2. View the project planning on Trello: [https://trello.com/b/PvStm7Bw/react-recipe-app]
 
+## Challenges
+CRUD implementation.
+
 ## Next Steps
 
 Planned future enhancements (icebox items) for the React recipe app.
